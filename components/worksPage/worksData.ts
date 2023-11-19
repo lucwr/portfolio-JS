@@ -2,7 +2,7 @@ import { SingleWorkData } from "../../types";
 
 export const worksData: SingleWorkData[] = [
   {
-    id: "0",
+    id: 0,
     description:
       "Turn2Me is an Irish-based mental health charity that provides professional online mental health support for adults and young people.",
     title: "Turn2Me",
@@ -12,7 +12,7 @@ export const worksData: SingleWorkData[] = [
     image: "/images/works/turn2me.png",
   },
   {
-    id: "1",
+    id: 1,
     description:
       "UXPressia is a customer experience mapping platform where customers can create user journey maps",
     title: "UXPressia",
@@ -22,7 +22,7 @@ export const worksData: SingleWorkData[] = [
     image: "/images/works/uxpressia.png",
   },
   {
-    id: "2",
+    id: 2,
     description: "Company website for CLOU Architects",
     title: "Clou Architects",
     workUrl: "https://www.clouarchitects.com/",
@@ -31,7 +31,7 @@ export const worksData: SingleWorkData[] = [
     image: "/images/works/clou.png",
   },
   {
-    id: "3",
+    id: 3,
     description:
       "Toggle is a platform that helps investors of all shapes and sizes find good ideas making the lastest investment technology and insights accessible to all",
     title: "Toggle AI",
@@ -40,7 +40,7 @@ export const worksData: SingleWorkData[] = [
     image: "/images/works/toggle.png",
   },
   {
-    id: "4",
+    id: 4,
     description: "A simple real time dashboard to display metrics",
     title: "Dashboard",
     workUrl: "https://baskhealth-simple-dashboard.vercel.app/",
@@ -50,7 +50,7 @@ export const worksData: SingleWorkData[] = [
     image: "/images/works/dashboard.png",
   },
   {
-    id: "5",
+    id: 5,
     description: "A simple news search application using Newsapi",
     title: "News Search App",
     githubUrl: "https://github.com/rapint/news-search",

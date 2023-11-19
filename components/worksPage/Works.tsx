@@ -3,7 +3,7 @@ import { useMemo, useState } from "react";
 import Title from "../Title";
 import Work from "./Work";
 import workOperations from "../../graphqlOperations/work";
-import { WorksConnectionData } from "../../types";
+import { SingleWorkData, WorksConnectionData } from "../../types";
 import WorksSkeleton from "./WorksSkeleton";
 import { currentWorkTab } from "../../apollo-client";
 import { useReactiveVar } from "@apollo/client";
@@ -71,7 +71,7 @@ export default function Works() {
         className="grid grid-cols-1 sm:grid-cols-2 relative vCustomLine before:hidden sm:before:block before:left-1/2 before:-translate-x-1/2 pt-12"
       >
         <AnimatePresence>
-          {worksData.map((w: any) => (
+          {worksData.map((w: SingleWorkData) => (
             <Work
               key={w.id}
               title={w.title}

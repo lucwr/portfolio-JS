@@ -91,7 +91,7 @@ interface WorksConnectionData {
 }
 
 interface SingleWorkData {
-  id: string;
+  id: number;
   description: string;
   title: string;
   workUrl?: string;

@@ -6,7 +6,7 @@ import { currentWork } from "../../apollo-client"
 interface Props {
   title: string
   imageUrl: string
-  projectId: string
+  projectId: number
 }
 
 export default function Work({ title, imageUrl, projectId }: Props) {
