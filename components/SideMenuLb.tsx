@@ -1,31 +1,31 @@
-import { ReactiveVar, useQuery, useReactiveVar } from "@apollo/client"
-import Image from "next/image"
+import { ReactiveVar, useQuery, useReactiveVar } from "@apollo/client";
+import Image from "next/image";
 import {
   Dispatch,
   SetStateAction,
   MouseEvent,
   useState,
   useEffect,
-} from "react"
-import { IoMdClose } from "react-icons/io"
-import { menus, socialMedia } from "../data"
-import SideMenuBtn from "./SideMenuBtn"
-import profileOperations from "../graphqlOperations/profile"
-import { partOfProfile, ProfileData } from "../types"
-import { currentMenu } from "../apollo-client"
+} from "react";
+import { IoMdClose } from "react-icons/io";
+import { menus, socialMedia } from "../data";
+import SideMenuBtn from "./SideMenuBtn";
+import profileOperations from "../graphqlOperations/profile";
+import { partOfProfile, ProfileData } from "../types";
+import { currentMenu } from "../apollo-client";
 
 interface Props {
-  sideMenu: boolean
-  showMenu: ReactiveVar<boolean>
-  profile: ProfileData
+  sideMenu: boolean;
+  showMenu: ReactiveVar<boolean>;
+  profile: ProfileData;
 }
 
 export default function SideMenuLb({ sideMenu, showMenu, profile }: Props) {
-  const menuId = useReactiveVar(currentMenu)
+  const menuId = useReactiveVar(currentMenu);
 
   function closeLb(e: MouseEvent): void {
     if ((e.target as Element).classList.contains("lb")) {
-      showMenu(false)
+      showMenu(false);
     }
   }
 
@@ -33,7 +33,7 @@ export default function SideMenuLb({ sideMenu, showMenu, profile }: Props) {
     <section
       onClick={closeLb}
       className={`lb fixed top-0 left-0 w-screen h-screen bg-gray-900/70 z-50 transition-all duration-200 ${
-        sideMenu ? "opacity-100 visible" : "opacity-0 invisible"
+        sideMenu ? "opacity-100 visible z-20" : "opacity-0 invisible z-0"
       }`}
     >
       <main className="max-h-screen h-screen noScroll overflow-y-scroll w-[32rem] max-w-full bg-[rgb(27,36,48)] flex flex-col relative">
@@ -97,10 +97,10 @@ export default function SideMenuLb({ sideMenu, showMenu, profile }: Props) {
           </a>
 
           <p className="text-center text-gray-500 text-xl mt-16 mb-10">
-            {"sunny's"} portfolio © 2022.
+            {"Paul's"} portfolio © {new Date().getFullYear()}.
           </p>
         </div>
       </main>
     </section>
-  )
+  );
 }

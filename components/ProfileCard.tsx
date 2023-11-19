@@ -1,13 +1,13 @@
-import { AiFillLinkedin } from "react-icons/ai"
-import { BsFillCloudArrowDownFill } from "react-icons/bs"
-import { ProfileData } from "../types"
-import MediaIcons from "./MediaIcons"
-import MyLink from "./MyLink"
-import Slide from "./Slide"
-import Typing from "./Typing"
+import { AiFillLinkedin } from "react-icons/ai";
+import { BsFillCloudArrowDownFill } from "react-icons/bs";
+import { ProfileData } from "../types";
+import MediaIcons from "./MediaIcons";
+import MyLink from "./MyLink";
+import Slide from "./Slide";
+import Typing from "./Typing";
 
 interface Props {
-  profileData: ProfileData
+  profileData: ProfileData;
 }
 
 export default function ProfileCard({ profileData }: Props) {
@@ -41,10 +41,10 @@ export default function ProfileCard({ profileData }: Props) {
           <MyLink
             name="my linkedin"
             Icon={AiFillLinkedin}
-            url="https://www.linkedin.com/in/arafat-freelancer"
+            url="https://www.linkedin.com/in/paul-frederique-b71394119/"
           />
         </div>
       </div>
     </div>
-  )
+  );
 }

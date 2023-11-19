@@ -1,43 +1,56 @@
-import type { NextPage } from "next"
-import Head from "next/head"
-import Background from "../components/Background"
-import LoaderPage from "../components/LoaderPage"
-import Menus from "../components/Menus"
-import ProfileCard from "../components/ProfileCard"
-import "react-loading-skeleton/dist/skeleton.css"
-import client, { currentMenu, currentWork, showMenu } from "../apollo-client"
-import profileOperations from "../graphqlOperations/profile"
-import { ProfileData } from "../types"
-import { useReactiveVar } from "@apollo/client"
-import { menus } from "../data"
-import { AnimatePresence, motion } from "framer-motion"
-import { useEffect, useState } from "react"
-import { Toaster } from "react-hot-toast"
-import WorkLb from "../components/worksPage/WorkLb"
-import SideMenuLb from "../components/SideMenuLb"
-import { BiMenu } from "react-icons/bi"
+import type { NextPage } from "next";
+import Head from "next/head";
+import Background from "../components/Background";
+import LoaderPage from "../components/LoaderPage";
+import Menus from "../components/Menus";
+import ProfileCard from "../components/ProfileCard";
+import "react-loading-skeleton/dist/skeleton.css";
+import client, { currentMenu, currentWork, showMenu } from "../apollo-client";
+import profileOperations from "../graphqlOperations/profile";
+import { ProfileData } from "../types";
+import { useReactiveVar } from "@apollo/client";
+import { menus } from "../data";
+import { AnimatePresence, motion } from "framer-motion";
+import { useEffect, useState } from "react";
+import { Toaster } from "react-hot-toast";
+import WorkLb from "../components/worksPage/WorkLb";
+import SideMenuLb from "../components/SideMenuLb";
+import { BiMenu } from "react-icons/bi";
 
 interface Props {
-  profileData: ProfileData
+  profileData: ProfileData;
 }
 
 const clipPaths = [
   "polygon(0 50%, 100% 50%, 100% 50%, 0 50%)",
   "polygon(50% 0, 50% 0, 50% 100%, 50% 100%)",
-]
+];
 
-const Home: NextPage<Props> = ({ profileData }) => {
-  const menuId = useReactiveVar(currentMenu)
-  const workId = useReactiveVar(currentWork)
-  const sideMenu = useReactiveVar(showMenu)
-  const [loaderPage, setLoaderPage] = useState<boolean>(true)
-
+const Home: NextPage<Props> = () => {
+  const profileData: ProfileData = {
+    id: "1",
+    cv: "https://drive.google.com/file/d/1EwjvdJm4dWU2MqAh3CWIJV9DFZ2KiDdt/view?usp=sharing",
+    name: "Paul Frederique",
+    ownersPhoto: {
+      url: "/images/about/avatar.jpg",
+    },
+    bgImages: [
+      { url: "/images/about/bg_1.jpg" },
+      { url: "/images/about/bg_2.jpg" },
+      { url: "/images/about/bg_3.jpg" },
+    ],
+  };
+  const menuId = useReactiveVar(currentMenu);
+  const workId = useReactiveVar(currentWork);
+  const sideMenu = useReactiveVar(showMenu);
+  const [loaderPage, setLoaderPage] = useState<boolean>(true);
+  console.log(workId);
   useEffect(() => {
-    const timeoutId = setTimeout(() => setLoaderPage(false), 3500)
+    const timeoutId = setTimeout(() => setLoaderPage(false), 3500);
     return () => {
-      clearTimeout(timeoutId)
-    }
-  }, [setLoaderPage])
+      clearTimeout(timeoutId);
+    };
+  }, [setLoaderPage]);
 
   return (
     <main className="relative flex items-center justify-center min-h-screen home">
@@ -52,7 +65,7 @@ const Home: NextPage<Props> = ({ profileData }) => {
       <Background />
 
       <AnimatePresence>
-        {workId && <WorkLb workId={workId} reactiveVar={currentWork} />}
+        {workId >= 0 && <WorkLb workId={workId} reactiveVar={currentWork} />}
       </AnimatePresence>
 
       <SideMenuLb
@@ -114,20 +127,20 @@ const Home: NextPage<Props> = ({ profileData }) => {
       </section>
       <Toaster />
     </main>
-  )
-}
+  );
+};
 
-export async function getStaticProps() {
-  const { data } = await client.query({
-    query: profileOperations.Queries.getProfile,
-  })
+// export async function getStaticProps() {
+//   const { data } = await client.query({
+//     query: profileOperations.Queries.getProfile,
+//   });
 
-  return {
-    props: {
-      profileData: data.profiles[0],
-    },
-    revalidate: 3600,
-  }
-}
+//   return {
+//     props: {
+//       profileData: data.profiles[0],
+//     },
+//     revalidate: 3600,
+//   };
+// }
 
-export default Home
+export default Home;

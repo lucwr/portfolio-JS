@@ -1,18 +1,20 @@
-import { useQuery } from "@apollo/client"
-import workOperations from "../graphqlOperations/work"
-import { currentWorkTab } from "../apollo-client"
+import { useQuery } from "@apollo/client";
+import workOperations from "../graphqlOperations/work";
+import { currentWorkTab } from "../apollo-client";
 
 interface Props {
-  name: string
-  currentMenu?: string
+  name: string;
+  currentMenu?: string;
 }
 
 interface TabsQuery {
-  workTabs: { tab: string }[]
+  workTabs: { tab: string }[];
 }
 
 export default function Title({ name, currentMenu }: Props) {
-  const { data: menus } = useQuery<TabsQuery>(workOperations.Queries.getTabs)
+  const menus = {
+    workTabs: [{ tab: "All" }, { tab: "Recent" }, { tab: "Favourite" }],
+  };
 
   return (
     <div className="customLine relative before:bottom-0 borderLeft z-20 py-10 flex flex-wrap gap-8 justify-center sm:justify-between items-center">
@@ -36,5 +38,5 @@ export default function Title({ name, currentMenu }: Props) {
         </ul>
       )}
     </div>
-  )
+  );
 }

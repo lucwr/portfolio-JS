@@ -8,7 +8,7 @@ interface Props {
 
 export default function IconTitle({ title, Icon }: Props) {
   return (
-    <div className="flex items-center gap-4 customLine before:bottom-0 relative borderLeft pb-4">
+    <div className="flex items-center gap-4 customLine before:bottom-0 relative borderLeft py-4 bg-gradient-to-r from-gray-800">
       <MyIcon Icon={Icon} size="w-20 h-20" />
       <h2 className="text-gray-300 text-2xl font-medium uppercase">{title}</h2>
     </div>

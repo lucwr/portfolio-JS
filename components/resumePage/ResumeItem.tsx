@@ -1,10 +1,10 @@
-import Image from "next/image"
-import { BiChevronRight } from "react-icons/bi"
-import { ExperienceData } from "../../types"
+import Image from "next/image";
+import { BiChevronRight } from "react-icons/bi";
+import { ExperienceData } from "../../types";
 
 interface Props {
-  resume: ExperienceData
-  border?: boolean
+  resume: ExperienceData;
+  border?: boolean;
 }
 
 export default function ResumeItem({ resume, border }: Props) {
@@ -23,18 +23,18 @@ export default function ResumeItem({ resume, border }: Props) {
       >
         {resume.badge}
       </h2>
-      <div className="flex items-center justify-between flex-wrap">
+      <div className="flex items-center justify-between">
         <h3 className="text-2xl capitalize font-medium text-gray-300 tracking-wide mt-5 mb-4">
           {resume.title}
         </h3>
         {resume.logo && (
           <Image
             src={resume.logo.url}
-            alt="linkedin"
-            width={100}
-            height={27}
-            objectFit="contain"
-            className="opacity-80 hidden"
+            alt={resume.subTitle}
+            width={50}
+            height={50}
+            objectFit="cover"
+            className="rounded-full"
           />
         )}
       </div>
@@ -42,9 +42,9 @@ export default function ResumeItem({ resume, border }: Props) {
       <p className="text-gray-500 text-xl capitalize tracking-wider">
         {resume.subTitle}
       </p>
-      <p className="text-gray-500 text-2xl capitalize tracking-wide mt-5 leading-relaxed">
+      {/* <p className="text-gray-500 text-2xl capitalize tracking-wide mt-5 leading-relaxed">
         {resume.desc}
-      </p>
+      </p> */}
     </div>
-  )
+  );
 }

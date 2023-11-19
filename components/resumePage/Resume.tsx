@@ -13,8 +13,8 @@ export default function Resume() {
       <Title name="skills" />
       <Skills />
 
-      <Title name="quote" />
-      <Testimonial testimonial={quoteData} />
+      {/* <Title name="quote" />
+      <Testimonial testimonial={quoteData} /> */}
     </section>
   )
 }
