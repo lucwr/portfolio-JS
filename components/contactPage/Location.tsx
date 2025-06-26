@@ -13,8 +13,8 @@ export default function Location() {
       ></iframe> */}
       <ul className="grid grid-cols-1 mt-10 location sm:grid-cols-2 gap-y-2">
         <MyInfo field="address" value="Maryland, United States" />
-        <MyInfo field="email" value="paul.fred52493@gmail.com" />
-        <MyInfo field="phone" value="+1 602 563 5334" />
+        <MyInfo field="email" value="paulfrederique99@gmail.com" />
+        <MyInfo field="phone" value="+1 (818) 724-4492" />
         <MyInfo field="freelance" value="Available" />
       </ul>
     </div>

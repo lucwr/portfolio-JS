@@ -33,7 +33,7 @@ export default function ProfileCard({ profileData }: Props) {
 
         <div className="absolute bottom-0 left-0 flex w-full h-28 borderLeft customLine">
           <MyLink
-            name="download cv"
+            name="download resume"
             Icon={BsFillCloudArrowDownFill}
             url={profileData.cv}
             border
@@ -41,7 +41,7 @@ export default function ProfileCard({ profileData }: Props) {
           <MyLink
             name="my linkedin"
             Icon={AiFillLinkedin}
-            url="https://www.linkedin.com/in/paul-frederique-b71394119/"
+            url="https://www.linkedin.com/in/paul-frederique/"
           />
         </div>
       </div>

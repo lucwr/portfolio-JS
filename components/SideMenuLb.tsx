@@ -93,7 +93,7 @@ export default function SideMenuLb({ sideMenu, showMenu, profile }: Props) {
             target="_blank"
             className="text-gray-300 uppercase text-xl border-2 border-solid border-gray-300 w-56 h-14 rounded-full font-semibold flex items-center justify-center mx-auto mt-12 hover:text-main-orange hover:border-main-orange transition-all duration-200"
           >
-            download cv
+            download resume
           </a>
 
           <p className="text-center text-gray-500 text-xl mt-16 mb-10">

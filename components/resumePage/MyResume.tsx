@@ -19,7 +19,7 @@ export default function MyResume() {
     resumes: [
       {
         id: "1",
-        badge: "03/2020 - 09/2023",
+        badge: "03/2023 - 06/2025",
         desc: "",
         experience: true,
         subTitle: "Centretek",
@@ -28,7 +28,7 @@ export default function MyResume() {
       },
       {
         id: "2",
-        badge: "02/2018 - 01/2020",
+        badge: "02/2020 - 01/2023",
         desc: "",
         experience: true,
         subTitle: "Turn2Me",
@@ -37,7 +37,7 @@ export default function MyResume() {
       },
       {
         id: "3",
-        badge: "11/2015 - 01/2018",
+        badge: "11/2018 - 01/2020",
         desc: "",
         experience: true,
         subTitle: "Zetaton",
@@ -46,7 +46,7 @@ export default function MyResume() {
       },
       {
         id: "4",
-        badge: "2011 - 2015",
+        badge: "2014 - 2018",
         desc: "",
         experience: false,
         subTitle: "Towson University",
