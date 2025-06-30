@@ -44,7 +44,7 @@ export const worksData: SingleWorkData[] = [
     description: "A simple real time dashboard to display metrics",
     title: "Dashboard",
     workUrl: "https://baskhealth-simple-dashboard.vercel.app/",
-    githubUrl: "https://github.com/rapint/basic-dashboard",
+    githubUrl: "https://github.com/lucwr/basic-dashboard",
     techStack:
       "Next.js, TypeScript, Tailwind CSS, React Apexcharts, Google Mapbox",
     image: "/images/works/dashboard.png",
@@ -53,7 +53,7 @@ export const worksData: SingleWorkData[] = [
     id: 5,
     description: "A simple news search application using Newsapi",
     title: "News Search App",
-    githubUrl: "https://github.com/rapint/news-search",
+    githubUrl: "https://github.com/lucwr/news-search",
     techStack: "React.js, TypeScript, Redux, Tailwind CSS, Newsapi",
     image: "/images/works/news-search.png",
   },

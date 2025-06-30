@@ -85,7 +85,7 @@ export const socialMedia: SocialMedia[] = [
     Icon: AiOutlineGithub,
     label: "Github",
     logoColor: "#171515",
-    mediaUrl: "https://github.com/rapint",
+    mediaUrl: "https://github.com/lucwr",
     info: "Star my projects on Github",
   },
   {
@@ -93,7 +93,7 @@ export const socialMedia: SocialMedia[] = [
     Icon: AiFillLinkedin,
     label: "Linkedin",
     logoColor: "#0072b1",
-    mediaUrl: "https://www.linkedin.com/in/paul-frederique-b71394119/",
+    mediaUrl: "https://www.linkedin.com/in/james-sato/",
     info: "Let's connect on Linkedin",
   },
 ];

@@ -29,8 +29,8 @@ const clipPaths = [
 const Home: NextPage<Props> = () => {
   const profileData: ProfileData = {
     id: "1",
-    cv: "https://drive.google.com/file/d/1bIEiUpXaajh_8bkN4u6dmeElb1Lk8eKp/view?usp=sharing",
-    name: "Paul Frederique",
+    cv: "https://drive.google.com/file/d/14ld2QDPPOmfBLbdTZWhd-YKrqfjJEY0F/view?usp=drive_link",
+    name: "James Sato",
     ownersPhoto: {
       url: "/images/about/avatar.jpg",
     },
