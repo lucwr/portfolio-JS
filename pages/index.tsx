@@ -31,9 +31,6 @@ const Home: NextPage<Props> = () => {
     id: "1",
     cv: "https://drive.google.com/file/d/14ld2QDPPOmfBLbdTZWhd-YKrqfjJEY0F/view?usp=drive_link",
     name: "James Sato",
-    ownersPhoto: {
-      url: "/images/about/avatar.jpg",
-    },
     bgImages: [
       { url: "/images/about/bg_1.jpg" },
       { url: "/images/about/bg_2.jpg" },

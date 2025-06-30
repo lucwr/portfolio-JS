@@ -45,14 +45,6 @@ export default function SideMenuLb({ sideMenu, showMenu, profile }: Props) {
         </button>
         <div className="top pb-12 pt-36 flex flex-col items-center">
           <div>
-            <Image
-              src={profile.ownersPhoto.url}
-              alt="userPic"
-              objectFit="cover"
-              width="125"
-              height="125"
-              className="rounded-full"
-            />
             <h3 className="text-[1.65rem] text-gray-300 tracking-wide font-medium capitalize text-center mt-6 mb-4">
               {profile.name}
             </h3>
