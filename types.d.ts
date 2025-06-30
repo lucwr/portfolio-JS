@@ -56,7 +56,7 @@ interface ExperienceData {
   experience: boolean;
   subTitle: string;
   title: string;
-  logo: { url: string };
+  logo?: { url: string };
 }
 
 interface SkillData {

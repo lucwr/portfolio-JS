@@ -2,9 +2,7 @@ import IconTitle from "./IconTitle";
 import ResumeItem from "./ResumeItem";
 import { FaGraduationCap, FaNetworkWired } from "react-icons/fa";
 import ResumeSkeleton from "./ResumeSkeleton";
-import resumeOperations from "../../graphqlOperations/resume";
 import { ExperienceData } from "../../types";
-import { useQuery } from "@apollo/client";
 import { useMemo } from "react";
 
 interface ExperienceQuery {
@@ -15,7 +13,7 @@ export default function MyResume() {
   // const { data, error } = useQuery<ExperienceQuery>(
   //   resumeOperations.Queries.getExperience
   // )
-  const data: ExperienceQuery = {
+  const data: ExperienceQuery = useMemo(() =>({
     resumes: [
       {
         id: "1",
@@ -58,7 +56,7 @@ export default function MyResume() {
         title: "B.S. in Computer Engineering",
       },
     ],
-  };
+  }), []);
   const filteredData = useMemo<
     [ExperienceData[], ExperienceData[]] | undefined
   >(() => {
