@@ -26,12 +26,11 @@ export default function AboutMe() {
       <article className="prose max-w-none prose-h2:mb-2.5 prose-h2:text-[1.6rem] prose-p:text-2xl prose-p:leading-[1.65]">
         <ReactMarkdown remarkPlugins={[remarkGfm]}>
           {/* {data.profiles[0].bio} */}
-          Dynamic Senior Full Stack Engineer with 7 years of experience building, deploying, and optimizing scalable web and
-          mobile applications. Expertise in modern front-end and back-end technologies, including TypeScript, React, Next.js,
-          Vue, Angular, Node.js, Python, and Golang. Proficient in deploying cloud-based solutions using AWS, Firebase, and
-          Supabase, with experience in Python, FastAPI, and Django. Adept at collaborating with cross-functional teams to
-          deliver high-performance, user-centric applications. Proven ability to drive technical innovation and product success,
-          seeking opportunities to contribute to visionary teams.
+          Dynamic Web3 Full-Stack Engineer with 6+ years of experience building secure, scalable dApps and smart contracts across Ethereum, Polygon, and other EVM-compatible networks.
+          Skilled in Solidity, ERC standards (ERC‑20, 721, 1155, 4337), Solana and full-stack tools like React, Next.js, Node.js, and AWS.
+          Led the development of DeFi platforms, smart wallets, and NFT marketplaces with a focus on gas efficiency, seamless onboarding, and compliance.
+          Experienced in integrating AI capabilities using FastAPI, SageMaker, and NLP to enable intelligent automation and adaptive user experiences.
+          Seeking opportunities to contribute to visionary teams.
         </ReactMarkdown>
       </article>
 
@@ -39,7 +38,7 @@ export default function AboutMe() {
         {/* <MyInfo field="age" value={`${new Date().getFullYear() - 1993}`} /> */}
         {/* <MyInfo field="residence" value="United States" /> */}
         <MyInfo field="freelance" value="Available" />
-        <MyInfo field="address" value="Los Angeles, CA" />
+        <MyInfo field="Location" value="Singapore" />
       </ul>
     </div>
   );

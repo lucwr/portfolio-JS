@@ -89,7 +89,7 @@ export default function SideMenuLb({ sideMenu, showMenu, profile }: Props) {
           </a>
 
           <p className="text-center text-gray-500 text-xl mt-16 mb-10">
-            {"James's"} portfolio © {new Date().getFullYear()}.
+            {"Daniel's"} portfolio © {new Date().getFullYear()}.
           </p>
         </div>
       </main>

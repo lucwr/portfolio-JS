@@ -30,7 +30,7 @@ const Home: NextPage<Props> = () => {
   const profileData: ProfileData = {
     id: "1",
     cv: "https://drive.google.com/file/d/14ld2QDPPOmfBLbdTZWhd-YKrqfjJEY0F/view?usp=drive_link",
-    name: "James Sato",
+    name: "Daniel Lee",
     bgImages: [
       { url: "/images/about/bg_1.jpg" },
       { url: "/images/about/bg_2.jpg" },
