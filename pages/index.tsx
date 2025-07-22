@@ -29,7 +29,7 @@ const clipPaths = [
 const Home: NextPage<Props> = () => {
   const profileData: ProfileData = {
     id: "1",
-    cv: "https://drive.google.com/file/d/15XZ8a6StmlfIARBS2ybPmpLW9Y_SLDfm/view?usp=drive_link",
+    cv: "https://drive.google.com/file/d/1Vy-Q_Li9uQm9bkZMd5860egeFnrBmul-/view?usp=drive_link",
     name: "Daniel Lee",
     bgImages: [
       { url: "/images/about/bg_1.jpg" },
