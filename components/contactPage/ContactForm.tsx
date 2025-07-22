@@ -4,8 +4,7 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import { AiOutlineSwapRight } from "react-icons/ai";
 import contactOperations from "../../graphqlOperations/contact";
 import toast from "react-hot-toast";
-// import emailjs from "@emailjs/browser";
-import emailjs from 'emailjs-com';
+import emailjs from "@emailjs/browser";
 
 interface Inputs {
   name: string;
