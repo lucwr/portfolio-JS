@@ -20,7 +20,7 @@ export default function MyResume() {
         badge: "08/2023 - 07/2025",
         desc: "",
         experience: true,
-        subTitle: "SLASH",
+        subTitle: "Slash",
         title: "Web3 Full-Stack Engineer",
       },
       {
@@ -28,7 +28,7 @@ export default function MyResume() {
         badge: "05/2021 - 07/2023",
         desc: "",
         experience: true,
-        subTitle: "PROPINE",
+        subTitle: "Propine",
         title: "Full Stack Engineer",
       },
       {
@@ -36,7 +36,7 @@ export default function MyResume() {
         badge: "07/2019 - 03/2021",
         desc: "",
         experience: true,
-        subTitle: "GUSTO",
+        subTitle: "Qtum",
         title: "Full Stack Developer",
       },
       {

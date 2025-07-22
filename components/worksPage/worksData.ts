@@ -4,31 +4,31 @@ export const worksData: SingleWorkData[] = [
   {
     id: 0,
     description:
-      "Turn2Me is an Irish-based mental health charity that provides professional online mental health support for adults and young people.",
-    title: "Turn2Me",
-    workUrl: "https://turn2me.ie/",
+      "Snippool is an NFT AMM inspired by Sudoswap where users can create pools, buy and sell NFTs, add pools to vaults to get rewards.",
+    title: "Snippool",
+    workUrl: "https://www.snippool.xyz/Collections",
     techStack:
-      "React.js, TypeScript, Redux, SCSS, Node/Express.js, PostgreSQL, Socket.io, Strapi CMS, Cypress",
-    image: "/images/works/turn2me.png",
+      "Next.js, Redux, Mateial UI, Styled Components, Apollo GraphQL, Subgraph, Solidity, Wagmi, Rainbowkit",
+    image: "/images/works/snippool.webp",
   },
   {
     id: 1,
     description:
-      "UXPressia is a customer experience mapping platform where customers can create user journey maps",
-    title: "UXPressia",
-    workUrl: "https://uxpressia.com/",
+      "Octopus Bridge is an application where users can bridge assets between Ethereum and other EVM compatible chains, Bitcoin and Bitcoin L2 networks.",
+    title: "Octopus Bridge",
+    workUrl: "https://octopusbridge.xyz/",
     techStack:
-      "Nuxt.js, TypeScript, SCSS, Vuex, Nest.js, PostgreSQL, TypeORM, Socket.io",
-    image: "/images/works/uxpressia.png",
+      "Next.js, Tailwind CSS, Nest.js, Prisma, PostgreSQL, Solidity, Wagmi, RainbowKit, Ether.js, BitcoinJS, Docker, AWS",
+    image: "/images/works/octopus.webp",
   },
   {
     id: 2,
-    description: "Company website for CLOU Architects",
-    title: "Clou Architects",
-    workUrl: "https://www.clouarchitects.com/",
+    description: "Gydedao is an NFT-gated website that provides users with helpful information about their lives. They offer resources on topics such as investments, savings, insurance, planning for retirement, taxes, and more. They provide resources from experienced professionals who can assist in guiding users through their financial decisions. The website also offers up-to-date news and insights from the financial world.",
+    title: "Gydedao",
+    workUrl: "https://gydedao.netlify.app/",
     techStack:
-      "React.js, TypeScript, Tailwind CSS, React-Three-Fiber, Three.js",
-    image: "/images/works/clou.png",
+      "React.js, Node/Express, MySQL, TailwindCSS, Google Map API, NEAR CLI",
+    image: "/images/works/gyde.webp",
   },
   {
     id: 3,
@@ -41,13 +41,12 @@ export const worksData: SingleWorkData[] = [
   },
   {
     id: 4,
-    description: "A simple real time dashboard to display metrics",
-    title: "Dashboard",
-    workUrl: "https://baskhealth-simple-dashboard.vercel.app/",
-    githubUrl: "https://github.com/lucwr/basic-dashboard",
+    description: "XDX is a decentralized exchange deployed on Avalanche with low swap fees and no price impact. It engages a liquidity shared mechanism called XDX to faciliate trades. XDX is the utility and governance token of the protocol.",
+    title: "XDX Exchange",
+    workUrl: "https://xdx-frontend.vercel.app/",
     techStack:
-      "Next.js, TypeScript, Tailwind CSS, React Apexcharts, Google Mapbox",
-    image: "/images/works/dashboard.png",
+      "React.js, Tailwind CSS, Web3-React, Ethers.js, Solidity, Hardhat, Subgraph",
+    image: "/images/works/xdx.webp",
   },
   {
     id: 5,

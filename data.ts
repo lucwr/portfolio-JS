@@ -101,31 +101,31 @@ export const socialMedia: SocialMedia[] = [
 export const services: ServiceData[] = [
   {
     id: 1,
-    title: "Front-end",
+    title: "Modern Front-End Frameworks",
     Icon: SiNextdotjs,
     description:
-      "Modern and mobile-ready website that will help you reach all of your marketing.",
+      "Scalable, mobile-friendly interfaces that combine modern design with real-time blockchain and AI features to boost engagement and conversion.",
   },
   {
     id: 2,
     title: "Back-end",
     Icon: SiNodedotjs,
     description:
-      "Back-end with SQL and NoSQL DB and API written in a standard express router or tRPC.",
+      "Backend APIs tailored for dApps, DeFi, and AI-driven platforms—leveraging serverless frameworks, smart contract integration, and modern database solutions.",
   },
   {
     id: 3,
-    title: "UI/UX design",
+    title: "AI Integration & Automation",
     Icon: SiFigma,
     description:
-      "Modern user Interface trends with a highly professional and unique design.",
+      "Integrated AI microservices using FastAPI and SageMaker for automation, fraud detection, predictive analytics, enhancing Web2/Web3 app efficiency.",
   },
   {
     id: 4,
-    title: "Firebase",
+    title: "DevOps & Deployment",
     Icon: SiFirebase,
     description:
-      "Fully functional firebase app with authentication, firestore, storage, etc.",
+      "Automated CI/CD pipelines with Docker, CircleCI, GitLab CI; deployed secure, scalable apps on AWS S3, CloudFront, and API Gateway.",
   },
 ];
 
