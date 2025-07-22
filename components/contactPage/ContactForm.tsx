@@ -4,7 +4,8 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import { AiOutlineSwapRight } from "react-icons/ai";
 import contactOperations from "../../graphqlOperations/contact";
 import toast from "react-hot-toast";
-import emailjs from "@emailjs/browser";
+// import emailjs from "@emailjs/browser";
+import emailjs from 'emailjs-com';
 
 interface Inputs {
   name: string;
@@ -85,12 +86,15 @@ export default function ContactForm() {
   };
 
   return (
-    <form className="p-12" onSubmit={handleSubmit(onSubmit)} ref={currentForm}>
+    // <form className="p-12" onSubmit={handleSubmit(onSubmit)} ref={currentForm}>
+    <form className="p-12" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="80c0e4a3-3032-4533-b98c-4a7a9217f543"></input>
       <div className="grid grid-cols-1 sm:grid-cols-2 mb-8 gap-8">
         <div>
           <input
             {...register("name", { required: true })}
             type="text"
+            name="name"
             placeholder="Full Name"
             className="w-full bg-transparent placeholder:text-2xl placeholder:text-gray-400 text-main-orange text-2xl py-4 focus:border-main-orange focus:placeholder:text-gray-300 px-6 rounded-none border-solid border-2 border-gray-800 mb-1"
           />
@@ -111,6 +115,7 @@ export default function ContactForm() {
               validate: handleEmailValidation,
             })}
             type="email"
+            name="email"
             placeholder="Email Address"
             className="w-full bg-transparent placeholder:text-2xl placeholder:text-gray-400 text-main-orange text-2xl py-4 focus:border-main-orange focus:placeholder:text-gray-300 px-6 rounded-none border-solid border-2 border-gray-800 mb-1"
           />
@@ -150,6 +155,7 @@ export default function ContactForm() {
       <div>
         <textarea
           {...register("message", { required: true })}
+          name="message"
           placeholder="Your Message"
           className="w-full resize-y h-60 bg-transparent placeholder:text-2xl placeholder:text-gray-400 text-main-orange text-2xl py-4 focus:border-main-orange focus:placeholder:text-gray-300 px-6 rounded-none border-solid border-2 border-gray-800 mb-1"
         ></textarea>
@@ -163,7 +169,6 @@ export default function ContactForm() {
           </>
         )}
       </div>
-
       <div className="w-[22rem] h-20 bg-[#0e1422d9] flex justify-center items-center gap-3 text-gray-300 group mt-6 rounded-lg cursor-pointer">
         <button
           type="submit"
