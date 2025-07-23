@@ -2,7 +2,7 @@ import { useState, useRef } from "react";
 import { useMutation } from "@apollo/client";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { AiOutlineSwapRight } from "react-icons/ai";
-import contactOperations from "../../graphqlOperations/contact";
+// import contactOperations from "../../graphqlOperations/contact";
 import toast from "react-hot-toast";
 import emailjs from "@emailjs/browser";
 
