@@ -87,7 +87,7 @@ export default function ContactForm() {
   return (
     // <form className="p-12" onSubmit={handleSubmit(onSubmit)} ref={currentForm}>
     <form className="p-12" action="https://api.web3forms.com/submit" method="POST">
-      <input type="hidden" name="access_key" value="80c0e4a3-3032-4533-b98c-4a7a9217f543"></input>
+      <input type="hidden" name="access_key" value="80a2545b-73a1-406d-84fd-d9c2087acfa2"></input>
       <div className="grid grid-cols-1 sm:grid-cols-2 mb-8 gap-8">
         <div>
           <input
