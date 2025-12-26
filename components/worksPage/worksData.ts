@@ -56,4 +56,40 @@ export const worksData: SingleWorkData[] = [
     techStack: "React.js, TypeScript, Redux, Tailwind CSS, Newsapi",
     image: "/images/works/news-search.png",
   },
+  {
+    id: 6,
+    description: `Clikalia is a popular Spanish platform that specializes in providing architectural and real estate advisory services. They offer a comprehensive range of ready-made house designs and solutions for building homes, catering to various styles and preferences.
+
+Clikalia boasts a vast collection of house designs, including modern, traditional, and energy-efficient options.
+
+Users can browse through thousands of projects to find the perfect fit for their needs.
+The platform offers innovative tools like iDesigner, a 3D house creator application, allowing users to visualize and customize their house designs in both 2D and 3D workspaces
+
+Adaptation Services.
+Construction Services.
+Consultation and Support.
+Clikalia is known for its excellent customer support, offering assistance at every stage of the project.`,
+    title: "Real Estate Service Platform",
+    workUrl: "https://clikalia.com/",
+    techStack: "React.js, Django, TypeScript, Redux, Tailwind CSS, Three.js",
+    image: "/images/works/clikalia.jpg",
+  },
+  {
+    id: 7,
+    description: `Lockerverse is a Web3 platform that allows athletes, entertainers, and creators to share their stories with fans through their online platform and in real life.
+
+The mission is to foster community, highlight diverse talent and their stories, and empower creators and their fans
+
+The platform aims to create a digital community hub for the future of the internet, where creators can build their personal brands and engage with their superfans
+Lockerverse has partnered with various high-profile individuals and organizations, including Bronny and Bryce James, CJ Stroud, Blue the Great, Chase B, Morehouse College, and others
+
+Community Channels and Direct Messaging.
+Exclusive Content Feed.
+Curated Merchandise Store.
+Lockerverse has received funding from investors such as GTMfund and Solana Ventures`,
+    title: "Social Web3 Platform",
+    workUrl: "https://lockerverse.com/",
+    techStack: "React.js, Node.js, TypeScript,  Solana, Firebase",
+    image: "/images/works/lockerverse.jpg",
+  },
 ];
