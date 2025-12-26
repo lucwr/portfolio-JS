@@ -31,20 +31,6 @@ export default function ContactForm() {
     reset,
     formState: { errors },
   } = useForm<Inputs>();
-  // const [sendMessage, { loading }] = useMutation<ContactMutation, Inputs>(
-  //   contactOperations.Mutation.sendMessage,
-  //   {
-  //     onCompleted({ createContact }) {
-  //       toast.success(`Thanks for contacting me ${createContact.fullName}`, {
-  //         duration: 5000,
-  //       });
-  //       reset({ fullName: "", email: "", message: "" });
-  //     },
-  //     onError() {
-  //       toast.error("Server error. Try again later");
-  //     },
-  //   }
-  // );
 
   function handleEmailValidation(email: string) {
     const isValid = isValidEmail(email);
