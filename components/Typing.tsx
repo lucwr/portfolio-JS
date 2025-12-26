@@ -7,12 +7,6 @@ export default function Typing() {
         onInit={(typewriter) => {
           typewriter
             .typeString(
-              '<span style="color: #f59e0b; font-size: 14px; font-weight: 400;">Programmer</span>'
-            )
-            .pauseFor(3500)
-            .deleteAll(17)
-
-            .typeString(
               '<span style="color: #f59e0b; font-size: 14px; font-weight: 400;">Front-end Developer</span>'
             )
             .pauseFor(3500)
@@ -24,6 +18,17 @@ export default function Typing() {
             .pauseFor(3500)
             .deleteAll(17)
 
+            .typeString(
+              '<span style="color: #f59e0b; font-size: 14px; font-weight: 400;">Software Engineer</span>'
+            )
+            .pauseFor(3500)
+            .deleteAll(17)
+
+            .typeString(
+              '<span style="color: #f59e0b; font-size: 14px; font-weight: 400;">Full stack Python developer</span>'
+            )
+            .pauseFor(3500)
+            .deleteAll(17)
             // .typeString(
             //   '<span style="color: #f59e0b; font-size: 14px; font-weight: 400;">Freelancer</span>'
             // )

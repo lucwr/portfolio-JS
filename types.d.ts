@@ -4,6 +4,7 @@ interface ProfileData {
   id: string;
   cv: string;
   name: string;
+  ownersPhoto: { url: string };
   bgImages: { url: string }[];
 }
 

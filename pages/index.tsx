@@ -29,8 +29,11 @@ const clipPaths = [
 const Home: NextPage<Props> = () => {
   const profileData: ProfileData = {
     id: "1",
-    cv: "https://docs.google.com/document/d/1fXolHj25B1NF8qDYzwNOvzFuj32C3uaG/edit?usp=drive_link&ouid=106441845075925706201&rtpof=true&sd=true",
-    name: "Daniel Lee",
+    cv: "https://drive.google.com/file/d/1-YGIOU2IgG6fDbhGYTYdjl4kMgjL9pS8/view?usp=drive_link",
+    name: "David Chen",
+    ownersPhoto: {
+      url: "/images/about/avatar(DC).png",
+    },
     bgImages: [
       { url: "/images/about/bg_1.jpg" },
       { url: "/images/about/bg_2.jpg" },

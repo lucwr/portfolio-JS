@@ -24,7 +24,7 @@ export default function Skills() {
       {
         id: "",
         knowledge: [
-          "Full Stack Web3 Development",
+          "Full Stack Python Development",
           "Third Party API Integration",
           "Database Design & Integration",
           "Authentication & KYC Workflows",

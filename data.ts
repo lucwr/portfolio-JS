@@ -93,7 +93,7 @@ export const socialMedia: SocialMedia[] = [
     Icon: AiFillLinkedin,
     label: "Linkedin",
     logoColor: "#0072b1",
-    mediaUrl: "https://www.linkedin.com/in/daniel-lee-93718b375/",
+    mediaUrl: "https://www.linkedin.com/in/david-chen-a8b198392/",
     info: "Let's connect on Linkedin",
   },
 ];

@@ -26,11 +26,12 @@ export default function AboutMe() {
       <article className="prose max-w-none prose-h2:mb-2.5 prose-h2:text-[1.6rem] prose-p:text-2xl prose-p:leading-[1.65]">
         <ReactMarkdown remarkPlugins={[remarkGfm]}>
           {/* {data.profiles[0].bio} */}
-          Dynamic Web3 Full-Stack Engineer with 6+ years of experience building secure, scalable dApps and smart contracts across Ethereum, Polygon, and other EVM-compatible networks.
-          Skilled in Solidity, ERC standards (ERC‑20, 721, 1155, 4337), Solana and full-stack tools like React, Next.js, Node.js, and AWS.
-          Led the development of DeFi platforms, smart wallets, and NFT marketplaces with a focus on gas efficiency, seamless onboarding, and compliance.
-          Experienced in integrating AI capabilities using FastAPI, SageMaker, and NLP to enable intelligent automation and adaptive user experiences.
-          Seeking opportunities to contribute to visionary teams.
+          Full Stack Python Developer with 7+ years of experience building Al-driven applications, real-time analytics
+          dashboards, and scalable cloud services. Skilled in designing chatbot systems, implementing ML-powered
+          features, and delivering high-performance APIs using FastAPI and Django. Adept at developing rich front-end
+          interfaces with React and Recharts, managing ETL pipelines, and deploying distributed systems on AWS with
+          Docker and CI/CD automation. Proven ability to work across teams, turn complex data into usable insights, and
+          deliver production-ready features that drive engagement and better decisions.
         </ReactMarkdown>
       </article>
 
@@ -38,7 +39,7 @@ export default function AboutMe() {
         {/* <MyInfo field="age" value={`${new Date().getFullYear() - 1993}`} /> */}
         {/* <MyInfo field="residence" value="United States" /> */}
         <MyInfo field="freelance" value="Available" />
-        <MyInfo field="Location" value="Singapore" />
+        <MyInfo field="Location" value="New York, US" />
       </ul>
     </div>
   );
